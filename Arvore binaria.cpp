@@ -35,7 +35,7 @@ Node* creat_node(Node* newNode, int data)
     }
 }
 
-struct Node* search(struct Node*, int data)
+struct Node* search(struct Node* node, int data)
 {
     
 }
@@ -51,5 +51,9 @@ int main()
         cin >> num;
         root = creat_node(root, num);
     }
+
+    cout << "Digite um numero para ver se ja possui na árvore" << endl;
+    cin >> num;
+    search(root, num); 
     return 0;
 }
